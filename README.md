@@ -2,7 +2,7 @@
 
 A template for a go microservice with a PubSub connection.
 
-For a service configured with an API look at https://github.com/johan-lejdung/go-microservice-api-template
+For a service configured with an REST-API look at https://github.com/johan-lejdung/go-microservice-api-template
 
 Features:
 - Dependency injection

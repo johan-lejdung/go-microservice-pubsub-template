@@ -1,0 +1,7 @@
+version: '2'
+services:
+  pubsub:
+      image: google/cloud-sdk
+      command: gcloud beta emulators pubsub start --host-port 0.0.0.0:8538
+      ports:
+        - "8590:8538"

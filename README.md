@@ -4,7 +4,7 @@
 [![CircleCI](https://circleci.com/gh/johan-lejdung/go-microservice-pubsub-template.svg?style=svg)](https://circleci.com/gh/johan-lejdung/go-microservice-pubsub-template)
 [![codecov](https://codecov.io/gh/johan-lejdung/go-microservice-pubsub-template/branch/master/graph/badge.svg)](https://codecov.io/gh/johan-lejdung/go-microservice-pubsub-template)
 
-A template for a go microservice with a PubSub connection.
+A template for a go microservice with a [PubSub](https://cloud.google.com/pubsub/docs/overview) connection together with [protobuf](https://developers.google.com/protocol-buffers/).
 
 For a service configured with an REST-API look at https://github.com/johan-lejdung/go-microservice-api-template
 

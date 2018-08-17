@@ -2,7 +2,7 @@
 // source: protomsg.proto
 
 /*
-Package protomsg is a generated protocol buffer package.
+Package goservice is a generated protocol buffer package.
 
 It is generated from these files:
 	protomsg.proto
@@ -10,7 +10,7 @@ It is generated from these files:
 It has these top-level messages:
 	Message
 */
-package protomsg
+package goservice
 
 import proto "github.com/golang/protobuf/proto"
 import fmt "fmt"
@@ -47,7 +47,7 @@ func init() {
 	proto.RegisterType((*Message)(nil), "Message")
 }
 
-func init() { proto.RegisterFile("protomsg.proto", fileDescriptor0) }
+func init() { proto.RegisterFile("goservice.proto", fileDescriptor0) }
 
 var fileDescriptor0 = []byte{
 	// 75 bytes of a gzipped FileDescriptorProto

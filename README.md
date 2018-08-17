@@ -86,7 +86,7 @@ Take a look in the `consume` and `produce` folders to check out how to subscribe
 Run a local pubsub instance in docker with `docker-compose up`.
 
 # Protobuf
-A generated protobuf file is in the `protomsg` packages, together with the raw proto file.
+A generated protobuf file is in the `goservice` packages. The raw proto file is round in root dir.
 
 To generate a proto file install `protoc` and execute `protoc --go_out=./go/ ./<PROTO_FILE>`
 

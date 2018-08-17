@@ -2,7 +2,7 @@
 
 
 [![CircleCI](https://circleci.com/gh/johan-lejdung/go-microservice-pubsub-template.svg?style=svg)](https://circleci.com/gh/johan-lejdung/go-microservice-pubsub-template)
-[![codecov](https://codecov.io/gh/johan-lejdung/wiseer/branch/master/graph/badge.svg?token=2b779e51-4fbb-442d-96e8-d1af21051285)](https://codecov.io/gh/johan-lejdung/go-microservice-pubsub-template)
+[![codecov](https://codecov.io/gh/johan-lejdung/go-microservice-pubsub-template/branch/master/graph/badge.svg?token=2b779e51-4fbb-442d-96e8-d1af21051285)](https://codecov.io/gh/johan-lejdung/go-microservice-pubsub-template)
 
 A template for a go microservice with a PubSub connection.
 

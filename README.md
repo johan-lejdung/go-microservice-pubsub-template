@@ -79,6 +79,8 @@ The pubsub connection is found in the `ps folder` and has the service it uses in
 
 Take a look in the `consume` and `produce` folders to check out how to subscribe and connect to topics.
 
+Run a local pubsub instance in docker with `docker-compose up`.
+
 # Protobuf
 A generated protobuf file is in the `protomsg` packages, together with the raw proto file.
 

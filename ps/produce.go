@@ -4,16 +4,15 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/johan-lejdung/go-microservice-pubsub-template/protomsg"
-
 	"cloud.google.com/go/pubsub"
 	"github.com/golang/protobuf/proto"
+	"github.com/johan-lejdung/go-microservice-pubsub-template/goservice"
 	log "github.com/sirupsen/logrus"
 	"golang.org/x/net/context"
 )
 
 // Produce will place a message in the pubsub topic
-func (ps *PubSub) Produce(msg *protomsg.Message) error {
+func (ps *PubSub) Produce(msg *goservice.Message) error {
 	log.Debugf("About to place one message to pubsub on topic %s", ps.pubsubTopic.String())
 	ctx := context.Background()
 

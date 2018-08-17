@@ -29,7 +29,7 @@ Replace all occourances of `go-microservice-pubsub-template` with whatever you a
 
 ## Env Config
 
-Open up `.env` and change the settings nessicary.
+Open up `.env` and change the settings necessary.
 
 ## CircleCI and CodeCov
 

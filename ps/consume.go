@@ -3,7 +3,7 @@ package ps
 import (
 	"cloud.google.com/go/pubsub"
 	"github.com/golang/protobuf/proto"
-	"github.com/johan-lejdung/go-microservice-pubsub-template/protomsg"
+	"github.com/johan-lejdung/go-microservice-pubsub-template/goservice"
 	log "github.com/sirupsen/logrus"
 	"golang.org/x/net/context"
 )
@@ -14,7 +14,7 @@ func (ps *PubSub) Consume() {
 
 	log.Debugf("PubSub sub %s starting", ps.pubsubTopic)
 	err := ps.pubsubSubscription.Receive(ctx, func(ctx context.Context, m *pubsub.Message) {
-		msg := protomsg.Message{}
+		msg := goservice.Message{}
 		if err := proto.Unmarshal(m.Data, &msg); err != nil {
 			m.Nack()
 		} else if ps.GoService.TestFunction() != nil {

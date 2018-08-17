@@ -4,8 +4,6 @@ import (
 	"os"
 	"time"
 
-	"github.com/johan-lejdung/go-microservice-pubsub-template/protomsg"
-
 	"github.com/johan-lejdung/go-microservice-pubsub-template/goservice"
 	log "github.com/sirupsen/logrus"
 	"google.golang.org/grpc"
@@ -19,7 +17,7 @@ import (
 type IPubSub interface {
 	Init()
 	Consume()
-	Produce(msg *protomsg.Message) error
+	Produce(msg *goservice.Message) error
 }
 
 // PubSub implements IPubSub

@@ -22,7 +22,7 @@ type IPubSub interface {
 
 // PubSub implements IPubSub
 type PubSub struct {
-	GoService          goservice.ServiceActions `inject:""`
+	GoService          goservice.Services `inject:""`
 	client             *pubsub.Client
 	pubsubTopic        *pubsub.Topic
 	pubsubSubscription *pubsub.Subscription

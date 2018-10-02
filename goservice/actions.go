@@ -4,8 +4,8 @@ import (
 	"database/sql"
 )
 
-// ServiceActions contains methods for the Actions
-type ServiceActions interface {
+// Services contains methods for the Actions
+type Services interface {
 	TestFunction() error
 }
 
@@ -13,6 +13,9 @@ type ServiceActions interface {
 type Service struct {
 	Db *sql.DB `inject:""`
 }
+
+// compile-time interface implementation check
+var _ Services = &Service{}
 
 // TestFunction will always return nil, replace with real function
 func (s *Service) TestFunction() error {
